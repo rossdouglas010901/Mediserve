@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a9ea68b22e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>Mediserve</title>
+</head>
+<body>
+    <main class="m-3">
+        <div class="input-group mb-3">
+            <input id="medicare" type="number" class="form-control" placeholder="Mediacre Card Number" aria-label="Medicare Card Number" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button onClick="search()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+            </div>
+          </div>
+          <iframe id="results" src="index.html" width="100%" height="100%"></iframe>
+          <br/>
+          <p id="demo"></p>
+          <button onClick="back()" class="btn btn-light">Back</button>
+    </main>
+</body>
+<script src="../JS/jquery.js"></script>
+<script src="../JS/init.js"></script>
+</html>

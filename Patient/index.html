@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/main.css">
+    <title>MediServe</title>
+</head>
+<body>
+    <main class="m-3">
+        <div id="questions">
+            <p>First Name</p>
+            <input type="text" id="firstname" placeholder="First Name" class="form-control" />
+            <p>Last Name</p>
+            <input type="text" id="lastname" placeholder="Last Name" class="form-control" />
+            <p>Birth Day</p>
+            <input type="date" id="birthday" placeholder="Birthday" class="form-control" /> 
+            <p>Medicare Number</p>
+            <input type="number" id="medicare" placeholder="Medicare Number" class="form-control" />
+            <p>Alergies</p>
+            <textarea id="alergies" placeholder="Alergies" class="form-control"></textarea>
+            <p>Recent Hospital Visits</p>
+            <textarea id="recentComplaints" placeholder="Description of recent Hosital Visits" class="form-control"></textarea>
+            <p>Reason For Visit</p>
+            <textarea id="complaint" placeholder="Describe why you are in here today" class="form-control"></textarea>
+    
+            <br/>
+            <button onClick="back()" class="btn btn-light">Back</button>
+            <button onclick="complete()" class="btn btn-primary">Next</button>
+        </div>
+        <div id="complete">
+            <h1>Thanks you</h1>
+            <p>Your info has been submitted</p>
+            <button onClick="home()" class="btn btn-primary">Done</button>
+        </div>
+    </main>
+</body>
+<script src="../JS/jquery.js"></script>
+<script src="../JS/init.js"></script>
+</html>
